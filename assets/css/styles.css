@@ -1,14 +1,229 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { ... }
+*{
+    margin: auto;
+    padding: 0px;
+}
+ 
+body {
+    background-image: url(../images/full-bloom.png);
+    margin: auto;
+}
 
-/* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
+h1 {
+    margin-left: 250px;
+    border: 1px solid #cccccc;
+    float: left;
+    padding: 21px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav {
+    border:1px solid #ccc;
+    border-width: 1px 0;
+    border-bottom-width: 2px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: white;
+    
+}
+.nav li{
+    display:inline;
+    color: darkgrey;
+}
+
+.nav a{
+    display:inline-block;
+    padding:30px;
+    color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about {
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 150px;
+    background-color: white;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 30px;
+    color: #4aaaa5;
+    padding-bottom: 15px;
+    border-bottom: 2px solid darkgrey;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+figure {
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 150px;
+    background-color: white;
+}
+
+.img {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-right: 20px;
+    float: left;
+}
+
+p {
+   margin-top: 30px;
+   margin-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px; 
+   text-align: justify; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid { 
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 87px;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    max-width: 960px;
     
 }
 
+h3 {
+    position: absolute;
+    margin-top: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: white;
+    font-family: serif;
+    width: 200px;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 250px;
+    margin-right: 150px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.form-name {
+    margin-top: 20px;
+    margin-left: 30px;
+    line-height: 1.4;
+}
+
+.form-email {
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 1.4;
+}
+
+.form-message {
+    margin-top: 10px;
+    margin-left: 30px;
+    line-height: 1.4;
+}
+
+.form-button {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+#name {
+    width: 775px;
+    height: 20px;
+}
+
+#email {
+    width: 775px;
+    height: 20px;
+}
+
+#message {
+    width: 775px;
+    height: 20px;
+}
+
+#form-button {
+    border: 1px solid grey;
+    padding: 10px 30px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: large;
+}
+
+hr {
+    margin-top: 110px;
+    border: 0px;
+    padding: 3px;
+    background-color: #4aaaa5;
+}
+
+.footer {
+    padding: 30px;
+    padding-bottom: 3px;
+    background-color: grey;
+    text-align: center;
+    font-size: small;
+    font-family: sans-serif;
+    color: white;
+    bottom: 0;
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 640px) {
+    header{
+        position: static;
+    }
+
+    .container1{
+        background: red;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+    h1{
+        width: 100%;
+        background: aliceblue;
+        text-align: center;
+    }
+    .nav{
+        float: right;
+        background: #4aaaa5;
+        text-align: center;
+    }
+    article{
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    footer{
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+}
+
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
-
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) { ... }
-
+@media (max-width: 980px) {
+    h1{
+        width: 100%;
+        background: gold;
+        text-align: center;
+    }
+}
